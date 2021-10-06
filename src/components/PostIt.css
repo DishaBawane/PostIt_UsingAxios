@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+.header {
+  height: object-fit;
+  background: #2563eb;
+  padding-bottom: 1rem;
+}
+
+.sec2-container {
+  margin: 1em;
+  background: #ffffff;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 0.2em;
+}
+
+.forminputcontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+  justify-content: space-evenly;
+  height: object-fit;
+  width: 505px;
+  background: #ededed;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  margin: auto;
+}
+.category_get {
+  width: 247px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 6px;
+  font-weight: 900;
+  margin-top: 0.5em;
+  margin-left: 0.3em;
+  border-style: none;
+}
+
+.postbtn {
+  width: 135px;
+  height: 35px;
+  background: #2563eb;
+  border-radius: 6px;
+  margin-top: 0.5em;
+  color: #ffffff;
+  border-color: #2563eb;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 26em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: object-fit;
+  width: 35%;
+  background: #fcfcfc;
+  border: 1px solid #ededed;
+  margin: 2em auto;
+  padding: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  border-radius: 7px;
+  box-shadow: 3px 6px 3px -2px rgb(153 152 152 / 40%),
+    0px 4px 5px rgb(128 127 127 / 60%), -2px 3px 1px -1px rgb(138 137 137 / 40%);
+}
+
+.image-container {
+  margin: auto;
+  padding-left: 0.3em;
+}
+
+.image_post {
+  width: 505px;
+  height: 273px;
+  border-radius: 6px;
+  margin: auto;
+}
+
+.usertext {
+  width: 500px;
+  height: 80px;
+  border-radius: 6px;
+  background: #ffffff;
+  border-style: none;
+  font-weight: 900;
+  margin-top: 0.5em;
+  color: black;
+}
+.title {
+  width: 500px;
+  height: 30px;
+  font-weight: 900;
+  background: #ffffff;
+  border-radius: 6px;
+  margin-top: 0.5em;
+  border-style: none;
+  color: black;
+}
+.userimgurl {
+  width: 247px;
+  height: 30px;
+  background: #ffffff;
+  font-weight: 900;
+  border-radius: 6px;
+  margin-top: 0.5em;
+  border-style: none;
+  color: black;
+}
+
+.title_date_post {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+.title_post {
+  font-size: 1em;
+  line-height: 22px;
+  font-weight: bold;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.date {
+  width: 150px;
+  height: 23px;
+  font-size: 12px;
+  text-transform: capitalize;
+
+  color: black;
+  margin-left: 17em;
+}
+
+.description_post {
+  width: 515px;
+  margin: auto;
+}
+
+.description {
+  font: size 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.3em;
+  text-align: left;
+  justify-content: left;
+  margin-bottom: 4em;
+  padding: 0.5em;
+}
+.category_post {
+  padding: 0.5em;
+}
+
+.category {
+  width: 90px;
+  height: 28px;
+  font-size: 0.8em;
+  margin-right: 32em;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #2563eb;
+  background: transparent;
+  border: 2px solid #2563eb;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-right: 0.5em;
+}
+.loading {
+  text-align: center;
+  color: crimson;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.errormsg {
+  font-size: 12px;
+  font-weight: bold;
+  color: crimson;
+}
+
+

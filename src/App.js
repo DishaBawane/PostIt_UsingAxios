@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./components/Card";
+import PostCard from "./components/PostCard";
 
-function App() {
+import usePostHttp from "./hooks/use-http";
+
+
+const App = () => {
+  const [posts, submitPost, isLoading,error] = usePostHttp();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Card submitPost={submitPost} />
+      {isLoading && <h3 className="loading">Loading new post....</h3>}
+      {posts.length <= 0 ? (
+        <h3 className="loading">Loading....</h3>
+      ) : (
+        posts.map((postData) => (
+          <PostCard
+            key={postData.objectId}
+            error={error}
+            img={postData.image}
+            title={postData.title}
+            text={postData.description}
+            category={postData.category}
+          />
+        ))
+      )}
+    </>
   );
-}
+};
 
 export default App;
